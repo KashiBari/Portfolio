@@ -70,6 +70,7 @@
     <section id="services" class="sec-pv">
         <div class="container">
             <div class="row">
+<!----------------------- below div properties is controlled by helper classes! ----------------------------------------->
                 <div class="sec-title">
                     <h2>Our Services</h2>
                     <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
@@ -160,7 +161,8 @@
                     <h2>I am available for freelancer.</h2>
                 </div>
                 <div class="btn-hire">
-                    <button>hire me!</button>
+<!----------------------- button properties is controlled by helper classes! ------------------------------------------>
+                    <button class="btn btn-primary">hire me!</button>
                 </div>
             </div>
         </div>
@@ -168,6 +170,7 @@
     <section id="client" class="sec-pv">
         <div class="container">
             <div class="row">
+<!----------------------- below div properties is controlled by helper classes! ----------------------------------------->
                 <div class="sec-title">
                     <h2>Our Client</h2>
                     <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
@@ -190,6 +193,7 @@
     <section id="works" class="sec-pv">
         <div class="container">
             <div class="row">
+<!----------------------- below div properties is controlled by helper classes! ----------------------------------------->
                 <div class="sec-title">
                     <h2>Our Works</h2>
                     <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
@@ -323,6 +327,7 @@
     <section id="blog" class="sec-pv">
         <div class="container">
             <div class="row">
+<!----------------------- below div properties is controlled by helper classes! ----------------------------------------->
                 <div class="sec-title">
                     <h2>Our Blogs</h2>
                     <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
@@ -341,7 +346,7 @@
                             <div class="card-content">
                                 <p>11 March 2020 <span>By Kashi</span></p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi repellendus beatae?</p>
-                                <h4>Read More...</h4>
+                                <a href="#">Read More...</a>
                             </div>
                         </div>
                     </div>
@@ -358,7 +363,7 @@
                             <div class="card-content">
                                 <p>18 March 2020 <span>By Kashi</span></p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi repellendus beatae?</p>
-                                <h4>Read More...</h4>
+                                <a href="#">Read More...</a>
                             </div>
                         </div>
                     </div>
@@ -375,7 +380,7 @@
                             <div class="card-content">
                                 <p>22 March 2020 <span>By Kashi</span></p>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto animi repellendus beatae?</p>
-                                <h4>Read More...</h4>
+                                <a href="#">Read More...</a>
                             </div>
                         </div>
                     </div>
@@ -386,6 +391,7 @@
     <section id="contact" class="sec-pv">
         <div class="container">
             <div class="row">
+<!----------------------- below div properties is controlled by helper classes! ----------------------------------------->
                 <div class="sec-title">
                     <h2>contact us</h2>
                     <p>It is a long established fact that a reader will be of a page when established fact looking at its layout.</p>
@@ -395,7 +401,7 @@
                 <div class="col">
                     <div class="contact-box">
                         <div class="contact-icon">
-                            <i class="fa-4x fas fa-mobile"></i>
+                            <i class="fa-4x fas fa-mobile-alt"></i>
                         </div>
                         <h3>Call us on</h3>
                         <p>+923418859742</p>
@@ -404,7 +410,7 @@
                 <div class="col">
                     <div class="contact-box">
                         <div class="contact-icon">
-                            <i class="fa-4x fas fa-envelope"></i>
+                            <i class="mail fa-4x fas fa-envelope"></i>
                         </div>
                         <h3>email us at</h3>
                         <p>kashifalibari10@gmail.com</p>
@@ -413,35 +419,45 @@
                 <div class="col">
                     <div class="contact-box">
                         <div class="contact-icon">
-                            <i class="map fa-4x fas fa-map-marker"></i>
+                            <i class="map fa-4x fas fa-map-marker-alt"></i>
                         </div>
                         <h3>visit office</h3>
                         <p>202 Street, STP, Konodas,<br>Gilgit.</p>
                     </div>
                 </div>
             </div>
-            <!-- <div class="row">
+            <div class="row">
                 <div class="col">
-                    <form id="contact" action="" method="post">
-                        <fieldset>
-                            <input placeholder="Your Name*" type="text" tabindex="1" required autofocus>
-                        </fieldset>
-                        <fieldset>
-                            <input placeholder="Your Email*" type="email" tabindex="2" required>
-                        </fieldset>
-                        <fieldset>
-                            <input placeholder="Subject" type="tel" tabindex="3" required>
-                        </fieldset>
-                        <fieldset>
-                            <textarea placeholder="Your Message..." tabindex="5" required></textarea>
-                        </fieldset>
-                        <fieldset>
-                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                        </fieldset>
+                    <form class="contact-form" action="" method="post">
+                            <input placeholder=" Your Name*" type="text" tabindex="1" required autofocus>
+                            <input placeholder=" Your Email*" type="email" tabindex="2" required>
+                            <input class="subject-field" placeholder="   Subject" type="tel" tabindex="3">
+                            <textarea placeholder=" Your Message..." tabindex="5" required></textarea>
+<!----------------------- button properties is controlled by helper classes! ------------------------------------------>
+                        <button class="btn btn-primary" name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send Message</button>
                     </form>
                 </div>
-            </div> -->
+            </div>
         </div>
     </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="footer-icons">
+                        <ul>
+                            <li><a href="https://dribbble.com/" class="fab fa-dribbble"></a></li>
+                            <li><a href="https://www.facebook.com/kashibari10" class="fab fa-facebook"></a></li>
+                            <li><a href="https://www.linkedin.cn/" class="fab fa-linkedin"></a></li>
+                            <li><a href="https://twitter.com/kashifbari10" class="fab fa-twitter"></a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h5>2018-2021 &copy; <span>Kashi</span>. Design by SRBThemes.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
