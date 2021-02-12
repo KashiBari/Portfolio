@@ -615,14 +615,7 @@ footer span{
         width: 100%;
         padding: auto 0px;
         margin: auto 0px;
-    }    
-/*............................ #works Media Queries */
-    }
-    #works .work-nav ul{
-        flex-flow: column wrap;
-        margin-bottom: 50px;
-        text-align: center;
-    }
+    } 
 /*............................ #hire-me Media Queries */
     #hire-me .row { 
         margin: 0;
@@ -664,6 +657,15 @@ footer span{
     }
 }
 /*............................ #works .box Media Queries */
+@media (max-width:990px) {
+    #works .work-nav ul{
+        flex-flow: column wrap;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+}
 @media only screen and (max-width:990px){
-    #works .box{ margin: 0 0 30px; }
+    #works .box{ 
+        margin: 0 0 30px; 
+    }
 }
