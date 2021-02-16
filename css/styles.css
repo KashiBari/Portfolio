@@ -6,7 +6,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .container{
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 h1,h2,h3,h4,h5,h6 {
@@ -343,6 +343,7 @@ h1,h2,h3,h4,h5,h6 {
     padding: 5px 10px;
     color: white;
     outline: none;
+    transition: 0.3s ease-in-out;
 }
 #works .work-nav ul li a:focus{
     background-color: red;
@@ -357,9 +358,9 @@ h1,h2,h3,h4,h5,h6 {
     display: flex;
     justify-content: space-evenly;
 }
-#works .image-box img{
-    width: 330px;
-    height: 260px;
+#works .image-box .box img{
+    /* width: 360px;
+    height: 260px; */
     border-radius: 5px;
 }
 /*....................................................... work box */
@@ -371,7 +372,7 @@ h1,h2,h3,h4,h5,h6 {
 #works .box:before,
 #works .box:after{
     content: "";
-    background: #34495e;
+    background: #086bce;
     opacity: 0.5;
     position: absolute;
     top: 0;
@@ -379,13 +380,14 @@ h1,h2,h3,h4,h5,h6 {
     right: 0;
     bottom: 100%;
     transition: all 0.35s 0s ease-out;
+    border-radius: 5px;
 }
 #works .box:hover:before{ bottom: 0; }
 #works .box:after{
     opacity: 0.8;
     bottom: 0;
     top: 100%;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(0% 0%, 0% 100%, 100% 100%);
     transition: all 0.35s 0.2s ease-in;
 }
 #works .box:hover:after{ top: 25%; }
@@ -485,7 +487,7 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
     height: auto;
 }
-/* ....................card-img hover */
+/* ...................................card-img hover */
 #blog .card-outer .card-body .card-heading{
     margin: 10px 0px;
 }
@@ -540,26 +542,24 @@ h1,h2,h3,h4,h5,h6 {
     width: 100%;
 }
 #contact .contact-form input{
-    width: 428px;
+    width: 49%;
     height: 40px;
     border-radius: 10px;
     outline: none;
     border: 2px solid gray;
-    margin: 10px 0px;
+
 }
 #contact .contact-form .subject-field{
-    width: 100%;
+    width: 99%;
     margin: 20px 0px;
 }
 #contact .contact-form textarea{
-    width: 100%;
+    width: 99%;
     height: 200px;
     border: 2px solid gray;
     border-radius: 10px;
-    outline: none;margin-bottom: 20px;
-}
-#contact .contact-form button{
-    text-align: right;
+    outline: none;
+    margin: 20px 0px;
 }
 footer{
     background-color: black;
@@ -642,26 +642,38 @@ footer span{
         justify-content: center;
     }
     #about .about-img img{
-        width: 200px;
-        height: 100px; 
+        width: 360px;
+        height: 300x;
+        margin: 0 auto;
+    }
 }
 @media (max-width:563px){
     .contact-form{
-        width: 50%;
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
     }
     .contact-form input{
-        width: 50%;
-    }
-    #contact .contact-form textarea{
-        width: 75%;
+        width: 100%;
+        margin: 20px 0px;
     }
 }
 /*............................ #works .box Media Queries */
-@media (max-width:990px) {
+@media (max-width:990px){
+    #works .image-box{
+        flex-flow: column wrap;
+    }
+    #works .image-box .box{
+        margin-bottom: 20px;
+    }
     #works .work-nav ul{
         flex-flow: column wrap;
-        margin-bottom: 50px;
         text-align: center;
+    }
+    #works .work-nav ul li{
+        margin-bottom: 10px;
     }
 }
 @media only screen and (max-width:990px){
